@@ -116,7 +116,6 @@ public class Product {
                 ", pPrice=" + pPrice +
                 ", pDiscount=" + pDiscount +
                 ", pQuantity=" + pQuantity +
-                ", categ=" + categ +
                 '}';
     }
     //calculate price after discount

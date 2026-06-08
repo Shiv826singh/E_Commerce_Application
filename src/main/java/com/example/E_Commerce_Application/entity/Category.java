@@ -69,7 +69,6 @@ public class Category {
                 "categoryId=" + categoryId +
                 ", categoryTitle='" + categoryTitle + '\'' +
                 ", categoryDescription='" + categoryDescription + '\'' +
-                ", products=" + products +
                 '}';
     }
 
