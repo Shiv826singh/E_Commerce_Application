@@ -1,0 +1,295 @@
+.form-control {
+    border: 2px solid black !important;
+    border-radius: 8px;
+}
+.form-control:focus {
+    border-bottom: 2px solid #6f42c1 !important;
+    box-shadow: none;
+}
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+.container {
+    background: transparent !important;
+}
+/* Login page background */
+body.login-bg {
+    background: url('/img/logbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.register-bg {
+    background: url('/img/regbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.admin-bg {
+    background: url('/img/adminbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.nor-bg {
+    background: url('/img/normalbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+label {
+    cursor: default !important;
+    user-select: none;
+}
+.navbar-nav {
+    align-items: center;   /* sab items same line me aa jayenge navbar ke */
+}
+.theme-btn {
+    background-color: transparent;   /* navbar jaisa Dark/light button */
+    color: white;                    /* text white */
+    border: 2px solid white;         /* bold border */
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.theme-btn:hover {
+    background-color: white; /* professional look dena Dark/light button ko in navbar, ki jab cursor es button ke upper le jane per white ho jaye */
+    color: #6f42c1;   /* hamare navbar color */
+}
+
+h1, h2, h3, p, div {
+    user-select: none; /* to stop the curson blinking problem on each text Globaly */
+}
+.custom-bg {
+    background-color: #6f42c1;  /* navbar color */
+    color: white;               /* text white */
+}
+/* to show product imgs on Home page */
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.card img {
+    height: 200px;
+    object-fit: contain;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
+.discount-label{
+    font-size: 10px!important;
+    font-style: italic!important;
+    text-decoration: line-through!important;
+}
+/* To add background in Home page */
+/*body {
+    background: linear-gradient(135deg, #5f2c82, #49a09d);
+    min-height: 100vh;
+}
+
+/* overlay blur effect */
+/*body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(80px);
+    z-index: -1;
+}
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}*/
+body {
+    background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff6a00, #ee0979);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+#toast {
+    min-width: 300px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -120px;
+    background: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-size: 18px;
+    visibility: hidden;
+    box-shadow: 0px 0px 100px #000;
+}
+
+#toast.display {
+    visibility: visible;
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/* ================= SEARCH BAR ================= */
+
+.search-box{
+
+    position: relative;
+
+    background: white;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+}
+
+.search-input{
+
+    height: 60px;
+
+    border: none;
+
+    padding-left: 25px;
+
+    font-size: 18px;
+
+    border-radius: 50px;
+}
+
+.search-input:focus{
+
+    box-shadow: none;
+}
+
+.search-btn{
+
+    position: absolute;
+
+    right: 6px;
+
+    top: 6px;
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+            135deg,
+            #6a11cb,
+            #2575fc
+    );
+
+    color: white;
+
+    border: none;
+}
+
+.search-btn:hover{
+
+    color: white;
+
+    transform: scale(1.05);
+
+    transition: 0.3s;
+}
+/* To give background color in register.jsp page ke register here wale box ko */
+.register-card{
+    background: linear-gradient(
+            135deg,
+            #f8f4ff,
+            #ede3ff,
+            #e2d1ff
+    ) !important;
+
+    border-radius: 20px !important;
+
+    box-shadow: 0 15px 40px rgba(111,66,193,0.35) !important;
+
+    border: none !important;
+}
+
+.location-box{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:12px 15px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    min-height:65px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+
+    transition:all 0.3s ease;
+}
+
+.location-box:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.20);
+}
+
+.location-icon{
+
+    font-size:28px;
+
+    color:#ff6b00;
+}
+
+.location-text{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#333;
+}
+
+
