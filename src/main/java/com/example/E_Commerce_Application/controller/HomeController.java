@@ -44,11 +44,6 @@ public class HomeController {
         return "login";
     }
 
-    @GetMapping("/testview")
-    public String testView() {
-        return "login";
-    }
-
     @GetMapping("/Careers")
     public String Careers() {
         return "Careers";
