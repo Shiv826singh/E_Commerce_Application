@@ -44,10 +44,9 @@ public class HomeController {
         return "login";
     }
 
-    @GetMapping("/test")
-    @ResponseBody
-    public String test() {
-        return "Application Working";
+    @GetMapping("/testview")
+    public String testView() {
+        return "login";
     }
 
     @GetMapping("/Careers")
