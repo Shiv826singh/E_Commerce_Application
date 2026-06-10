@@ -2,18 +2,14 @@ package com.example.E_Commerce_Application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-
 @SpringBootApplication
-public class ECommerceApplication extends SpringBootServletInitializer {
-
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(ECommerceApplication.class);
-	}
+public class ECommerceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ECommerceApplication.class, args);
+
+        SpringApplication.run(ECommerceApplication.class, args);
+
 	}
+
+
 }
