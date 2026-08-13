@@ -507,6 +507,8 @@
                         cart management and professional
                         user experience.
 
+                        Developed During Internship at Talking Crooks IT Pvt Ltd
+
                     </p>
 
                 </div>
